@@ -17,5 +17,5 @@
 <p>I will be using a star schema model</p>
 <h5>Tables:</h5>
 <ol>
-    <li>tb_dim_customers</li>
+    <li>tb_fact_sales</li>
 </ol>
