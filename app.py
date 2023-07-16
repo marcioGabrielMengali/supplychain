@@ -12,7 +12,7 @@ def pipeline(read_path, file, save_path):
     print('> Starting Pipeline')
     files = csv.read_csv_file_chunk(path=read_path, file=file)
     print('>> Starting Tb Fact Sales')
-    tables.customers(files=files, columns=columns.dict_columns['sales'], save_path=save_path)
+    tables.sales(files=files, columns=columns.dict_columns['sales'], save_path=save_path)
     print('\t>> Tb Fact sales Compelted')
 
 
