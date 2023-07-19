@@ -18,4 +18,5 @@
 <h5>Tables:</h5>
 <ol>
     <li>tb_fact_sales</li>
+    <li>tb_dim_order</li>
 </ol>
