@@ -13,14 +13,18 @@ def pipeline(read_path:str, save_path:str) -> None:
         read_path=read_path,
         save_path=save_path
     )
-    dataframes = csv.read_csv_chunks(filename=file, enconding='latin1')
+    
     for key, value in dict_tables.items():
+        dataframes = csv.read_csv_chunks(filename=file, enconding='latin1')
         table = etl.make_table(
             table_name=key,
             files = dataframes,
-            columns=value
+            columns=value['columns'],
+            flag=value['flag'],
+            subset=value['subset']
         )
         csv.csv_to_json(
             filename=key,
             dataframe=table
         )
+        

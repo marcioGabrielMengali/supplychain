@@ -6,5 +6,5 @@ def make_path(path:str, file:str) -> str:
     return os.path.join(path, file)
 
 def make_save_path(path:str, file:str) -> str:
-    """Function to make path based on OS to save the file etih json extension"""
+    """Function to make path based on OS to save the file with json extension"""
     return os.path.join(path, f'{file}.json')

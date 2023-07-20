@@ -17,14 +17,14 @@ class CSV:
         print(Fore.YELLOW + f'>> Reaading file: {filename}')
         path = make_path(path=self.read_path, file=filename)
         try:
-            return pd.read_csv(path, encoding=enconding, chunksize=10000)
+            return pd.read_csv(path, encoding=enconding, chunksize=10000, iterator=True)
         except Exception as e:
             print(Fore.RED + f'>>> Error Read File: {str(e)}')
     
 
     def csv_to_json(self, filename:str, dataframe:pd.DataFrame) -> None:
         """Funtion to convert csv to json"""
-        print(Fore.YELLOW + f'>> saving file: {filename}')
+        print(Fore.MAGENTA + f'\t>> saving file: {filename}')
         path = make_save_path(path=self.save_path, file=filename)
         try:
             dataframe.to_json(
