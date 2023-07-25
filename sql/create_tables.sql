@@ -4,9 +4,9 @@ CREATE SCHEMA IF NOT EXISTS supplychain;
 --FACT TABLES
 CREATE TABLE IF NOT EXISTS supplychain.tb_fact_sales(
     orderid INTEGER,
-    orderitem INTEGER,
+    orderitemid INTEGER,
     sales REAL,
-    PRIMARY KEY(orderid, orderitem)
+    PRIMARY KEY(orderid, orderitemid)
 );
 
 --DIM TABELS
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS supplychain.tb_dim_orders(
 CREATE TABLE IF NOT EXISTS supplychain.tb_dim_order_item(
     orderitemid INTEGER,
     orderitemdiscountrate FLOAT,
-    orderitemprofitraio FLOAT,
+    orderitemprofitratio FLOAT,
     productid INTEGER,
     PRIMARY KEY(orderitemid)
 );
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS supplychain.tb_dim_customers(
 
 );
 
-CREATE TABLE IF NOT EXISTS supplychain.tb_dim_department(
+CREATE TABLE IF NOT EXISTS supplychain.tb_dim_departments(
     departmentid INTEGER,
     departmentname TEXT,
     PRIMARY KEY(departmentid)
@@ -78,4 +78,3 @@ CREATE TABLE IF NOT EXISTS supplychain.tb_dim_department(
 
 
 
-`

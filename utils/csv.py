@@ -29,7 +29,8 @@ class CSV:
         try:
             dataframe.to_json(
                 path,
-                orient='records'
+                orient='records',
+                lines=True
             )
         except Exception as e:
             print(Fore.RED + f'>>> Error write File {str(e)}')

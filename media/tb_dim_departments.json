@@ -1,1 +1,11 @@
-[{"Department Id":2,"Department Name":"Fitness"},{"Department Id":4,"Department Name":"Apparel"},{"Department Id":5,"Department Name":"Golf"},{"Department Id":3,"Department Name":"Footwear"},{"Department Id":6,"Department Name":"Outdoors"},{"Department Id":7,"Department Name":"Fan Shop"},{"Department Id":10,"Department Name":"Technology"},{"Department Id":8,"Department Name":"Book Shop"},{"Department Id":9,"Department Name":"Discs Shop"},{"Department Id":11,"Department Name":"Pet Shop"},{"Department Id":12,"Department Name":"Health and Beauty "}]
+{"departmentid":2,"departmentname":"Fitness"}
+{"departmentid":4,"departmentname":"Apparel"}
+{"departmentid":5,"departmentname":"Golf"}
+{"departmentid":3,"departmentname":"Footwear"}
+{"departmentid":6,"departmentname":"Outdoors"}
+{"departmentid":7,"departmentname":"Fan Shop"}
+{"departmentid":10,"departmentname":"Technology"}
+{"departmentid":8,"departmentname":"Book Shop"}
+{"departmentid":9,"departmentname":"Discs Shop"}
+{"departmentid":11,"departmentname":"Pet Shop"}
+{"departmentid":12,"departmentname":"Health and Beauty "}

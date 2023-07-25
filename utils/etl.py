@@ -1,8 +1,9 @@
-#Function to perform ETL
+# Function to perform ETL
 from colorama import Fore
 import pandas as pd
 
-def make_table(table_name:str, files, columns:list, flag: str, subset: list) -> pd.DataFrame:
+
+def make_table(table_name: str, files, columns: list, flag: str, subset: list, rename_columns: dict) -> pd.DataFrame:
     """Function to return table based on selected columns"""
     print(Fore.YELLOW + f'>> Making Table: {table_name}')
     table = pd.DataFrame()
@@ -20,9 +21,8 @@ def make_table(table_name:str, files, columns:list, flag: str, subset: list) -> 
                 [table, aux_table],
                 axis=0
             )
-            table.drop_duplicates(subset=subset,inplace=True)
+            table.drop_duplicates(subset=subset, inplace=True)
+    table.rename(columns=rename_columns, inplace=True)
     print(Fore.CYAN + f'\t >>>Table Informations (Shape): {table.shape}')
     print(Fore.CYAN + f'\t >>>Table Informations (Columns): {table.columns}')
     return table
-    
-    
