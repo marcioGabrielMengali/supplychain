@@ -14,9 +14,14 @@
 <p>Upload Files to Postgres database</p>
 <hr>
 <h3>The data modeling</h3>
-<p>I will be using a star schema model</p>
+<p>I will be using a snowflake schema</p>
 <h5>Tables:</h5>
 <ol>
     <li>tb_fact_sales</li>
     <li>tb_dim_order</li>
+    <li>tb_dim_orderitem</li>
+    <li>tb_dim_products</li>
+    <li>tb_dim_category</li>
+    <li>tb_dim_customers</li>
+    <li>tb_dim_departments</li>
 </ol>
