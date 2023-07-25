@@ -11,7 +11,7 @@
 <h3>Python Script</h3>
 <p>The first thing is to convert from csv to json</p>
 <p>the files will be saved named as fact and dim tables</p>
-<p>Upload Files to Postgres database</p>
+<p>Upload Files to Postgres database - Using multiprocessing</p>
 <hr>
 <h3>The data modeling</h3>
 <p>I will be using a snowflake schema</p>
